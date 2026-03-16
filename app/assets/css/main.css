@@ -1,0 +1,377 @@
+/* ============================================================
+   DESIGN SYSTEM — Curso N8N · Faz que Vende
+   Based on mentoria.prismeapp.com.br identity
+   ============================================================ */
+
+:root {
+  /* === AMBER/GOLD — Brand primary === */
+  --primary: #F59E0B;
+  --primary-hover: #D97706;
+  --primary-accent: #FACC15;
+  --primary-light: rgba(245, 158, 11, 0.10);
+  --primary-glow: rgba(245, 158, 11, 0.25);
+  --primary-border: rgba(245, 158, 11, 0.20);
+  --primary-strong: rgba(245, 158, 11, 0.35);
+
+  /* === N8N BRAND === */
+  --n8n: #EA4B71;
+  --n8n-orange: #FF6D5A;
+  --n8n-light: rgba(234, 75, 113, 0.10);
+
+  /* === DARK BACKGROUNDS === */
+  --bg: #020617;
+  --bg-alt: #0A0F1E;
+  --bg-card: rgba(15, 23, 42, 0.85);
+  --border-dark: rgba(255, 255, 255, 0.07);
+  --border-dark-2: rgba(255, 255, 255, 0.12);
+
+  /* === LIGHT BACKGROUNDS === */
+  --bg-light: #FDF8EF;
+  --bg-light-alt: #FFF9F0;
+  --bg-light-card: #FFFFFF;
+  --border-light: rgba(0, 0, 0, 0.06);
+
+  /* === TEXT (dark sections) === */
+  --text: #F8FAFC;
+  --text-secondary: #94A3B8;
+  --text-dim: #64748B;
+
+  /* === TEXT (light sections) === */
+  --text-dark: #0F172A;
+  --text-dark-secondary: #475569;
+  --text-dark-dim: #64748B;
+
+  /* === TYPOGRAPHY === */
+  --font-headline: 'Montserrat', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+  --font-mono: 'DM Mono', monospace;
+
+  /* === SHAPES === */
+  --radius: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-2xl: 40px;
+
+  /* === SHADOWS === */
+  --shadow-premium: 0 25px 60px rgba(0, 0, 0, 0.45);
+  --shadow-primary: 0 0 40px rgba(245, 158, 11, 0.15);
+  --shadow-primary-strong: 0 0 60px rgba(245, 158, 11, 0.30);
+  --shadow-light: 0 4px 24px rgba(0, 0, 0, 0.06);
+  --shadow-light-hover: 0 8px 40px rgba(0, 0, 0, 0.10);
+
+  /* === LAYOUT === */
+  --max-w: 1200px;
+  --section-pad: 96px 24px;
+}
+
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img, svg { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+
+/* ============================================================
+   TYPOGRAPHY
+   ============================================================ */
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-headline);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+}
+
+.heading-gradient {
+  background: linear-gradient(135deg, #FACC15 0%, #F59E0B 50%, #D97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ============================================================
+   LAYOUT
+   ============================================================ */
+
+.container {
+  width: 100%;
+  max-width: var(--max-w);
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+/* Conteúdo centralizado para leitura confortável */
+.container--narrow {
+  max-width: 720px;
+}
+
+.container--content {
+  max-width: 800px;
+}
+
+.section { padding: var(--section-pad); }
+.section-dark  { background-color: var(--bg);       color: var(--text); }
+.section-dark-alt { background-color: var(--bg-alt); color: var(--text); }
+.section-light { background-color: var(--bg-light);  color: var(--text-dark); }
+
+/* ============================================================
+   BUTTON SYSTEM
+   ============================================================ */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 14px 28px;
+  border-radius: var(--radius-lg);
+  font-family: var(--font-headline);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:active {
+  transform: translateY(1px) scale(0.99);
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: var(--bg);
+  border-color: var(--primary);
+  box-shadow: var(--shadow-primary);
+}
+
+.btn-primary:hover {
+  background: var(--primary-hover);
+  border-color: var(--primary-hover);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-primary-strong);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--primary);
+  border-color: var(--primary-border);
+}
+
+.btn-outline:hover {
+  background: var(--primary-light);
+  border-color: var(--primary);
+  transform: translateY(-2px);
+}
+
+.btn-lg {
+  padding: 20px 44px;
+  font-size: 15px;
+  border-radius: var(--radius-xl);
+}
+
+/* ============================================================
+   GLASS CARD (dark sections)
+   ============================================================ */
+
+.glass {
+  background: var(--bg-card);
+  border: 1px solid var(--border-dark);
+  box-shadow: var(--shadow-premium);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.card-light {
+  background: var(--bg-light-card);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-light);
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+.card-light:hover {
+  box-shadow: var(--shadow-light-hover);
+  transform: translateY(-3px);
+}
+
+/* ============================================================
+   BADGE SYSTEM
+   ============================================================ */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-family: var(--font-headline);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.badge-gold {
+  background: var(--primary-light);
+  color: var(--primary);
+  border: 1px solid var(--primary-border);
+}
+
+.badge-gold-light {
+  background: rgba(245, 158, 11, 0.08);
+  color: #92400E;
+  border: 1px solid rgba(245, 158, 11, 0.20);
+}
+
+.badge-n8n {
+  background: var(--n8n-light);
+  color: var(--n8n);
+  border: 1px solid rgba(234, 75, 113, 0.25);
+}
+
+.badge-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: currentColor;
+  flex-shrink: 0;
+  animation: ping 1.8s cubic-bezier(0,0,0.2,1) infinite;
+}
+
+/* ============================================================
+   SECTION HEADLINE
+   ============================================================ */
+
+.section-headline {
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.section-headline h2 {
+  font-size: clamp(28px, 4vw, 52px);
+  font-weight: 900;
+  margin-bottom: 16px;
+  letter-spacing: -0.03em;
+}
+
+.section-headline p {
+  font-size: 18px;
+  color: var(--text-secondary);
+  max-width: 520px;
+  margin-inline: auto;
+  line-height: 1.7;
+}
+
+.section-headline.on-light p { color: var(--text-dark-secondary); }
+.section-headline.on-light h2 { color: var(--text-dark); }
+
+/* ============================================================
+   SCROLL REVEAL
+   ============================================================ */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.10s; }
+.reveal-delay-2 { transition-delay: 0.20s; }
+.reveal-delay-3 { transition-delay: 0.30s; }
+.reveal-delay-4 { transition-delay: 0.40s; }
+
+/* ============================================================
+   ANIMATIONS
+   ============================================================ */
+
+@keyframes ping {
+  75%, 100% { transform: scale(2); opacity: 0; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: var(--shadow-primary); }
+  50% { box-shadow: var(--shadow-primary-strong); }
+}
+
+@keyframes dashflow {
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ============================================================
+   DIVIDERS
+   ============================================================ */
+
+.divider-dark-to-light {
+  height: 100px;
+  background: linear-gradient(to bottom, var(--bg) 0%, var(--bg-light) 100%);
+}
+
+.divider-light-to-dark {
+  height: 100px;
+  background: linear-gradient(to bottom, var(--bg-light) 0%, var(--bg) 100%);
+}
+
+/* ============================================================
+   GRID UTILITIES
+   ============================================================ */
+
+.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 1024px) {
+  :root { --section-pad: 80px 24px; }
+}
+
+@media (max-width: 768px) {
+  :root { --section-pad: 64px 20px; }
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .section-headline h2 { font-size: 28px; }
+  .section-headline { margin-bottom: 52px; }
+  .section-headline p { font-size: 16px; line-height: 1.6; }
+  .btn:not(.nav__cta) { width: 100%; justify-content: center; }
+}
+
+/* Touch targets: NN/g 1cm min, web.dev 48px. Coarse pointer = touchscreen */
+@media (any-pointer: coarse) {
+  .btn { min-height: 52px; }
+}
