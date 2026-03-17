@@ -48,9 +48,9 @@ export default defineNuxtConfig({
         { name: 'theme-color', content: '#020617' },
       ],
       link: [
-        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-        { rel: 'apple-touch-icon', href: '/favicon.svg' },
+        { rel: 'icon', type: 'image/png', sizes: '64x64', href: '/favicon-64.png' },
+        { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32.png' },
+        { rel: 'apple-touch-icon', sizes: '192x192', href: '/apple-touch-icon.png' },
       ],
     },
   },
