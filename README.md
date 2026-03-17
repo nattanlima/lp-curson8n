@@ -73,3 +73,18 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+## Deploy em produção (GitHub Pages)
+
+O repositório usa GitHub Actions para build e deploy automático. O site estático é gerado e publicado no GitHub Pages.
+
+### Ativar o deploy
+
+1. No repositório no GitHub: **Settings** → **Pages**.
+2. Em **Build and deployment** → **Source**, escolha **GitHub Actions**.
+3. Faça push na branch `main` (ou dispare o workflow em **Actions** → **Deploy to GitHub Pages** → **Run workflow**).
+
+Após o primeiro deploy, o site ficará em:
+
+- `https://<seu-usuario>.github.io/lp-curson8n/`
+- Se o domínio customizado estiver configurado (CNAME: `domine-n8n.prismeapp.com.br`), use esse endereço após apontar o DNS do domínio para o GitHub Pages.
