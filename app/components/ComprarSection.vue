@@ -122,8 +122,9 @@
 const config = useRuntimeConfig()
 const includes = [
   '4 aulas 100% ao vivo (2h cada) — não é gravado',
+  'Grupos reduzidos para atenção personalizada',
+  'Acesso ao grupo exclusivo focado no curso',
   'Gravações para revisão após cada aula',
-  'Grupo fechado no WhatsApp com 1.500 empresários',
   'Acompanhamento posterior para implementação e ajustes',
   'Workflows prontos para usar',
   'Módulo prático com IA e banco de dados aplicados',
@@ -131,9 +132,9 @@ const includes = [
 ]
 
 const reasons = [
-  '⏰ Turma limitada para garantir qualidade',
+  '⏰ Grupos reduzidos — turma limitada para garantir qualidade',
   '📅 Datas fixas — próxima turma sem previsão',
-  '👥 Grupo fechado para tirar dúvidas no dia a dia',
+  '👥 Grupo exclusivo focado no curso para tirar dúvidas no dia a dia',
   '🎯 Sai de cada aula com resultado concreto + plano de continuidade',
 ]
 </script>

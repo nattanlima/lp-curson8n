@@ -27,7 +27,7 @@
 
         <!-- Sub (enxuto) -->
         <p class="hero__sub reveal reveal-delay-2">
-          Aulas ao vivo — não é curso gravado. Você participa em tempo real, tira dúvidas na hora e sai de cada aula com automação rodando. Grupo fechado e acompanhamento posterior.
+          Aulas ao vivo — não é curso gravado. Grupos reduzidos para atenção personalizada. Você participa em tempo real, tira dúvidas na hora e sai de cada aula com automação rodando. Acesso ao grupo exclusivo focado no curso e acompanhamento posterior.
         </p>
 
         <!-- CTAs + trust inline (prioridade na primeira dobra) -->

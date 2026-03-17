@@ -36,7 +36,7 @@ const paraQuem = [
   'Quer automatizar sem depender de desenvolvedor ou agência',
   'Tem negócio próprio e quer reduzir trabalho manual',
   'Pode estar presente nos 4 sábados ao vivo (não é gravado)',
-  'Quer grupo fechado e acompanhamento para implementar depois',
+  'Quer grupos reduzidos e acesso ao grupo exclusivo focado no curso para implementar depois',
 ]
 
 const naoParaQuem = [
