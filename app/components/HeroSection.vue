@@ -77,9 +77,13 @@
         </div>
       </div>
 
-      <!-- Right: foto Nattan + workflow -->
-      <div class="hero__right reveal reveal-delay-2">
-        <!-- Foto Nattan (humanizada — foto real) -->
+      <!-- Right: mockup do vídeo primeiro (em cima) + foto Nattan -->
+      <div class="hero__right">
+        <!-- Tela do PC com vídeo n8n — em cima para aparecer na dobra -->
+        <div class="hero__workflow">
+          <VideoScreenMockup />
+        </div>
+        <!-- Foto Nattan -->
         <div class="hero__photo-card">
           <img
             src="https://raw.githubusercontent.com/nattanlima/lpconsultoria-nattan/main/public/principal.png"
@@ -87,17 +91,10 @@
             class="hero__photo"
           />
           <div class="hero__photo-overlay" aria-hidden="true"></div>
-
-          <!-- Floating badge sobre a foto -->
           <div class="hero__float-badge">
             <span class="hero__float-dot"></span>
             <span>Usa N8N em produção</span>
           </div>
-        </div>
-
-        <!-- Workflow abaixo da foto -->
-        <div class="hero__workflow">
-          <WorkflowMockup />
         </div>
       </div>
     </div>
@@ -420,13 +417,40 @@ const metrics = [
   .hero__photo-card, .hero__workflow { max-width: 300px; }
 }
 
+@media (max-width: 600px) {
+  /* Mobile: centralizar, menos bordas, vídeo maior, remover foto abaixo */
+  .hero .container {
+    padding-inline: 12px;
+  }
+  .hero__inner {
+    text-align: center;
+    justify-items: center;
+  }
+  .hero__sub { margin-inline: auto; }
+  .hero__ctas { justify-content: center; }
+  .hero__countdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero__countdown-row { justify-content: center; }
+  .hero__right {
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+  }
+  .hero__workflow {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
 @media (max-width: 480px) {
   .hero__ctas { flex-direction: column; }
   .hero__ctas .btn { width: 100%; justify-content: center; min-height: 52px; }
   .hero__trust-line { font-size: 11px; }
   .hero__cd-unit { min-width: 52px; padding: 8px 10px; }
   .hero__cd-num { font-size: 22px; }
-  .hero__right { flex-direction: column; }
   .hero__metrics { display: none; }
 }
 </style>

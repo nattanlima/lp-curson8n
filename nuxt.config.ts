@@ -57,7 +57,7 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      checkoutUrl: process.env.NUXT_PUBLIC_CHECKOUT_URL || 'https://kiwify.app/LINK-AQUI',
+      checkoutUrl: process.env.NUXT_PUBLIC_CHECKOUT_URL || 'https://buy.stripe.com/5kQfZg37lbkd8QMfz0cAo05',
       whatsappNumber: process.env.NUXT_PUBLIC_WHATSAPP_NUMBER || '5511999999999',
     },
   },
