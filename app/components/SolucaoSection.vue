@@ -113,7 +113,7 @@ const features = [
 .solucao__inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  gap: clamp(48px, 6vw, 100px);
   align-items: center;
 }
 

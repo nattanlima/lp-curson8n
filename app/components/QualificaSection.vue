@@ -52,7 +52,7 @@ const naoParaQuem = [
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
-  max-width: 720px;
+  max-width: 860px;
   margin-inline: auto;
 }
 

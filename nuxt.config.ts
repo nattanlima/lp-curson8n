@@ -61,7 +61,7 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      checkoutUrl: process.env.NUXT_PUBLIC_CHECKOUT_URL || 'https://buy.stripe.com/5kQfZg37lbkd8QMfz0cAo05',
+      checkoutUrl: process.env.NUXT_PUBLIC_CHECKOUT_URL || 'https://buy.stripe.com/5kQbJ03952DzdFx6qb00000',
       whatsappNumber: process.env.NUXT_PUBLIC_WHATSAPP_NUMBER || '5511999999999',
     },
   },

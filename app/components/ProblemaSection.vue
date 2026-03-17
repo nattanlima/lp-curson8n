@@ -128,7 +128,7 @@ const problems = [
 /* Empathy quote */
 .problema__empathy {
   position: relative;
-  max-width: 640px;
+  max-width: 720px;
   margin-inline: auto;
   text-align: center;
   padding: 32px;

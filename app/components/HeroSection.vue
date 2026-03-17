@@ -184,7 +184,7 @@ const metrics = [
 .hero__inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 64px;
+  gap: clamp(48px, 6vw, 96px);
   align-items: center;
 }
 

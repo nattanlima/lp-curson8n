@@ -98,7 +98,7 @@ const faqs = [
 
 <style scoped>
 .faq__list {
-  max-width: 720px;
+  max-width: 860px;
   margin-inline: auto;
   display: flex;
   flex-direction: column;
@@ -169,7 +169,7 @@ const faqs = [
 }
 
 .faq__cta {
-  max-width: 720px;
+  max-width: 860px;
   margin-inline: auto;
   display: flex;
   align-items: center;

@@ -145,7 +145,7 @@ const reasons = [
   grid-template-columns: 1fr 340px;
   gap: 28px;
   align-items: start;
-  max-width: 960px;
+  max-width: 1160px;
   margin-inline: auto;
 }
 
@@ -402,12 +402,12 @@ const reasons = [
   flex-direction: column;
   gap: 16px;
   margin-top: 24px;
-  max-width: 560px;
+  max-width: 600px;
   margin-inline: auto;
 }
 
 @media (max-width: 960px) {
-  .comprar__layout { grid-template-columns: 1fr; max-width: 560px; }
+  .comprar__layout { grid-template-columns: 1fr; max-width: 600px; }
   .comprar__sidebar { display: none; }
   .comprar__mobile-urgency { display: flex; }
 }

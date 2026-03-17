@@ -101,7 +101,7 @@ const aulas = [
 
 .final__content {
   text-align: center;
-  max-width: 760px;
+  max-width: 900px;
   margin-inline: auto;
   padding-bottom: 80px;
   display: flex;
